@@ -1,0 +1,24 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Mirio Eggmann"
+author = "Mirio Eggmann"
+theme = "black-and-light"
+
+canonifyurls = true
+
+pygmentsstyle       = "bw"
+pygmentscodefences  = true
+
+[params]
+  sitename = "Black & Light"
+  disableWebFonts = false
+
+[[menu.main]]
+    name = "About"
+    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+[[menu.main]]
+    name = "Projects"
+    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+[[menu.main]]
+    name = "Resume"
+    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
