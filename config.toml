@@ -14,7 +14,7 @@ disqusShortname = "yourdiscussshortname"
 
 [params]
     author = "Mirio Eggmann"
-    description = "John Doe's personal website"
+    description = "Mirio Eggmann's personal website"
     keywords = "blog,developer,personal"
     info = "Full Stack Developer and Crypto enthusiast"
     avatarurl = "images/avatar.jpg"
