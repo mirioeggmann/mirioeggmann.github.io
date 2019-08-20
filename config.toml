@@ -54,15 +54,9 @@ disqusShortname = "yourdiscussshortname"
     url = "https://github.com/mirioeggmann/"
 [[params.social]]
     name = "Gitlab"
-    icon = "fab fa-gitlab"
+    icon = "fab fa-instagram"
     weight = 2
-    url = "https://gitlab.com/mirioeggmann/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    weight = 3
-    url = "https://twitter.com/mirioeggmann/"
-
+    url = "https://instagram.com/mirioeggmann/"
 
 [languages]
     [languages.en]
@@ -77,13 +71,3 @@ disqusShortname = "yourdiscussshortname"
         name = "Blog"
         weight = 2
         url = "posts/"
-
-        [[languages.en.menu.main]]
-        name = "Projects"
-        weight = 3
-        url = "projects/"
-
-        [[languages.en.menu.main]]
-        name = "Contact me"
-        weight = 5
-        url = "contact/"
