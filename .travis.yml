@@ -1,0 +1,30 @@
+os: linux
+dist: trusty
+sudo: required
+
+language: go
+go:
+  - "1.11"
+
+branches:
+  only:
+    - development
+    - master
+
+before_script:
+  - go get github.com/gohugoio/hugo
+script:
+  - hugo
+
+addons:
+  apt:
+    update: true
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN
+  target_branch: master
+  local_dir: public
+  on:
+    branch: development
