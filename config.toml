@@ -62,6 +62,11 @@ disqusShortname = "mirioeggmann"
     icon = "fab fa-keybase"
     weight = 3
     url = "https://keybase.io/mirioeggmann/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    weight = 4
+    url = "https://twitter.com/mirioeggmann/"
 
 [languages]
     [languages.en]
