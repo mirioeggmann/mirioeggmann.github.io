@@ -67,6 +67,11 @@ disqusShortname = "mirioeggmann"
     icon = "fab fa-twitter"
     weight = 4
     url = "https://twitter.com/mirioeggmann/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 4
+    url = "https://www.linkedin.com/in/mirio-eggmann-739309123"
 
 [languages]
     [languages.en]
