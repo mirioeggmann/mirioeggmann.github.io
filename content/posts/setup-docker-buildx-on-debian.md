@@ -2,11 +2,10 @@
 draft = false
 date = 2019-09-25T19:09:56+02:00
 title = "Setup Docker Buildx on Debian"
-description = ""
+description = "The post explains how to setup buildx."
 slug = "setup-docker-buildx-on-debian"
 tags = ["docker","buildx"]
 categories = ["docker"]
-externalLink = ""
 series = []
 +++
 
