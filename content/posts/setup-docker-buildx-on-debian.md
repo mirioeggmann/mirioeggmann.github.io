@@ -6,7 +6,7 @@ description = "The post explains how to setup buildx."
 slug = "setup-docker-buildx-on-debian"
 tags = ["docker","buildx"]
 categories = ["docker"]
-series = []
+series = ["docker"]
 +++
 
 - Install docker-ce according to [Get Docker Engine - Community for Debian](https://docs.docker.com/install/linux/docker-ce/debian/)
