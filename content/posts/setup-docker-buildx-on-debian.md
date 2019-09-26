@@ -59,3 +59,10 @@ Status:    running
 Platforms: linux/amd64, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, linux/386, linux/arm/v7, linux/arm/v6
 ```
 - You are now ready to use Docker Buildx!
+
+<!-- Beginning of tippin.me Button -->
+- <div>
+<div id="tippin-button" data-dest="mirioeggmann"></div>
+<script src="https://tippin.me/buttons/tip.js" type="text/javascript"></script>
+</div>
+<!-- End of tippin.me Button -->
