@@ -2,11 +2,10 @@
 draft = false
 date = 2019-09-25T19:09:56+02:00
 title = "Setup Docker Buildx on Debian"
-description = "The post explains how to setup buildx."
+description = ""
 slug = "setup-docker-buildx-on-debian"
 tags = ["docker","buildx"]
-categories = ["docker"]
-series = ["docker"]
+categories = ["technology"]
 +++
 
 - Install docker-ce according to [Get Docker Engine - Community for Debian](https://docs.docker.com/install/linux/docker-ce/debian/)
