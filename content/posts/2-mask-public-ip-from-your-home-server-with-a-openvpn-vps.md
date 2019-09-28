@@ -1,5 +1,5 @@
 +++ 
-draft = false
+draft = true
 date = 2019-09-28T13:27:10+02:00
 title = "Mask public IP from your Home Server with a OpenVPN VPS"
 description = ""
@@ -49,9 +49,7 @@ Machine B (Home Server)
 sudo apt-get install openvpn
 ```
 
-<!-- Beginning of tippin.me Button -->
-- <div>
-<div id="tippin-button" data-dest="mirioeggmann"></div>
-<script src="https://tippin.me/buttons/tip.js" type="text/javascript"></script>
+- <div> Feel free to
+    <div style="margin-left:5px;margin-right:5px; display:inline-block;" id="tippin-button" data-dest="mirioeggmann"></div> ;)
+    <script src="https://tippin.me/buttons/tip.js" type="text/javascript"></script>
 </div>
-<!-- End of tippin.me Button -->
