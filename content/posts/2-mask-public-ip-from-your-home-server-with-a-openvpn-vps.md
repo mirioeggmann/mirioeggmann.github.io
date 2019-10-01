@@ -2,7 +2,6 @@
 draft = true
 date = 2019-09-28T13:27:10+02:00
 title = "Mask public IP from your Home Server with a OpenVPN VPS"
-description = ""
 slug = "mask-public-ip-from-your-home-server-with-a-openvpn-vps" 
 tags = ["openvpn","vps","google-cloud-platform"]
 categories = ["technology"]
