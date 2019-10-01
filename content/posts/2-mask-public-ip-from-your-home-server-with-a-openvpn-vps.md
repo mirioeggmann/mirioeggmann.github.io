@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2019-09-28T13:27:10+02:00
 title = "Mask public IP from your Home Server with a OpenVPN VPS"
 slug = "mask-public-ip-from-your-home-server-with-a-openvpn-vps" 
@@ -104,10 +104,10 @@ sudo reboot
 
 * Install OpenVPN
 ```bash
-sudo apt-get install openvpn
+sudo apt install openvpn -y
 ```
-* Copy the client config from your OpenVPN VPS which is stored under `/root/client.ovpn`
-* Connect the home server the the OpenVPN VPS (ATTENTION: after you connect your home server it will only be accessible over the 
+* Copy the client config from your OpenVPN VPS which is stored under `/root/client.ovpn` to your home server
+* Connect the home server to the OpenVPN VPS (ATTENTION: after you connect you will lose the connection to your home server and it will only be accessible over the 
 VPN... so you have to connect to it over the OpenVPN VPS and from there you can open an SSH session with ssh USERNAME@10.8.0.2)
 ```bash
 sudo openvpn client.ovpn
