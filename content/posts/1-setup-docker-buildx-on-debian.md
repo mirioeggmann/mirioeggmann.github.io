@@ -59,7 +59,7 @@ Platforms: linux/amd64, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, 
 ```
 - You are now ready to use Docker Buildx!
 
-- <div> Feel free to
+<div> Feel free to
     <div style="margin-left:5px;margin-right:5px; display:inline-block;" id="tippin-button" data-dest="mirioeggmann"></div> ;)
     <script src="https://tippin.me/buttons/tip.js" type="text/javascript"></script>
 </div>
