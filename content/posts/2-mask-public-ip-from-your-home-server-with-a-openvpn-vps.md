@@ -16,6 +16,7 @@ The left picture shows the example service with a VPS in front. It exposes the I
 of the Google Cloud Platform. The IP of your home network stays hidden.
 
 ## Setup OpenVPN VPS Instance on GCP
+### Create instance
 Go to: Compute Engine -> VM instances -> Create Instance
 
 * Set your desired name
@@ -26,12 +27,31 @@ Go to: Compute Engine -> VM instances -> Create Instance
   * Size (GB): `10`
 * Click `Create`
 
+### Assign static IP address
 Go to: VPC Network -> External IP addresses -> RESERVE STATIC IP ADDRESS
 
 * Set your desired name
 * Change `Attach to` to your new OpenVPN instance
 * IP version: `IPv4`
 * Click `Reserve`
+
+### Add firewall rule for openvpn
+Go to: VPC Network -> Firewall rules -> CREATE FIREWALL RULE
+
+* Set your desired name
+* Targets: `All instances in the network`
+* Source IP ranges: `0.0.0.0/0`
+* Protocols and ports -> Specified protocols and ports: `udp:1194`
+* Click `Create`
+
+### Add firewall rule for http,https
+Go to: VPC Network -> Firewall rules -> CREATE FIREWALL RULE
+
+* Set your desired name
+* Targets: `All instances in the network`
+* Source IP ranges: `0.0.0.0/0`
+* Protocols and ports -> Specified protocols and ports: `tcp:80,443; udp:80,443`
+* Click `Create`
 
 ## Configure the OpenVPN VPS Instance
 Go to: Compute Engine -> VM instances & click on the `SSH` button of your new instance
