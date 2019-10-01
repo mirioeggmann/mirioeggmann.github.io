@@ -8,15 +8,13 @@ tags = ["openvpn","vps","google-cloud-platform"]
 categories = ["technology"]
 +++
 
-The first picture shows an example service without a VPS (Virtual Privat Server) in front. It exposes the 
+![setup](/images/posts/2/setup.png)
+
+The right picture shows an example service without a VPS (Virtual Privat Server) in front. It exposes the 
 public IP of your home network to the world.
 
-![without_vps](/images/posts/2/without_vps.png)
-
-The second picture shows the example service with a VPS in front. It exposes the IP of your VPS machine fg. an IP
+The left picture shows the example service with a VPS in front. It exposes the IP of your VPS machine fg. an IP
 of the Google Cloud Platform. The IP of your home network stays hidden.
-
-![with vps](/images/posts/2/with_vps.png)
 
 ## Setup OpenVPN VPS Instance on GCP
 Go to: Compute Engine -> VM instances -> Create Instance
