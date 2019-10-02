@@ -8,3 +8,4 @@ categories = ["technology"]
 +++
 
 ![raspikube](/images/posts/3/raspikube.jpg)
+ 
