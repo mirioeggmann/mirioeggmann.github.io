@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: mirioeggmann.github.io
+Token: 7843f052be748779905ac615845f006958cd26386f7a8622379349aafec56173
