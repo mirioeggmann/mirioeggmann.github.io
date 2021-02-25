@@ -53,10 +53,10 @@ disqusShortname = "mirioeggmann"
     weight = 1
     url = "https://github.com/mirioeggmann/"
 [[params.social]]
-    name = "Instagram"
-    icon = "fab fa-instagram"
+    name = "E-Mail"
+    icon = "fab fa-envelope"
     weight = 2
-    url = "https://instagram.com/mirioeggmann/"
+    url = "mailto:mirio.eggmann@protonmail.ch"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
