@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cluster on </title>
+    <link>https://mirioeggmann.github.io/tags/cluster/</link>
+    <description>Recent content in cluster on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Mar 2021 13:22:23 +0200</lastBuildDate>
+    
+	<atom:link href="https://mirioeggmann.github.io/tags/cluster/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Raspberry Pi 4 4GB Cluster Setup</title>
+      <link>https://mirioeggmann.github.io/posts/3-raspberry-pi-4-4gb-cluster-setup/</link>
+      <pubDate>Mon, 01 Mar 2021 13:22:23 +0200</pubDate>
+      
+      <guid>https://mirioeggmann.github.io/posts/3-raspberry-pi-4-4gb-cluster-setup/</guid>
+      <description> Setup Raspberry Pis Configure PoE fans (automate with ansible) dtoverlay=rpi-poe dtparam=poe_fan_temp0=57000 dtparam=poe_fan_temp1=60000 dtparam=poe_fan_temp2=63000 dtparam=poe_fan_temp3=66000</description>
+    </item>
+    
+  </channel>
+</rss>

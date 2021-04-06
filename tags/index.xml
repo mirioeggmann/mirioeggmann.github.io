@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on </title>
+    <link>https://mirioeggmann.github.io/tags/</link>
+    <description>Recent content in Tags on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Mar 2021 13:22:23 +0200</lastBuildDate>
+    
+	<atom:link href="https://mirioeggmann.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>arm64</title>
+      <link>https://mirioeggmann.github.io/tags/arm64/</link>
+      <pubDate>Mon, 01 Mar 2021 13:22:23 +0200</pubDate>
+      
+      <guid>https://mirioeggmann.github.io/tags/arm64/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cluster</title>
+      <link>https://mirioeggmann.github.io/tags/cluster/</link>
+      <pubDate>Mon, 01 Mar 2021 13:22:23 +0200</pubDate>
+      
+      <guid>https://mirioeggmann.github.io/tags/cluster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://mirioeggmann.github.io/tags/kubernetes/</link>
+      <pubDate>Mon, 01 Mar 2021 13:22:23 +0200</pubDate>
+      
+      <guid>https://mirioeggmann.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microk8s</title>
+      <link>https://mirioeggmann.github.io/tags/microk8s/</link>
+      <pubDate>Mon, 01 Mar 2021 13:22:23 +0200</pubDate>
+      
+      <guid>https://mirioeggmann.github.io/tags/microk8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry-pi</title>
+      <link>https://mirioeggmann.github.io/tags/raspberry-pi/</link>
+      <pubDate>Mon, 01 Mar 2021 13:22:23 +0200</pubDate>
+      
+      <guid>https://mirioeggmann.github.io/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google-cloud-platform</title>
+      <link>https://mirioeggmann.github.io/tags/google-cloud-platform/</link>
+      <pubDate>Sat, 28 Sep 2019 13:27:10 +0200</pubDate>
+      
+      <guid>https://mirioeggmann.github.io/tags/google-cloud-platform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openvpn</title>
+      <link>https://mirioeggmann.github.io/tags/openvpn/</link>
+      <pubDate>Sat, 28 Sep 2019 13:27:10 +0200</pubDate>
+      
+      <guid>https://mirioeggmann.github.io/tags/openvpn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vps</title>
+      <link>https://mirioeggmann.github.io/tags/vps/</link>
+      <pubDate>Sat, 28 Sep 2019 13:27:10 +0200</pubDate>
+      
+      <guid>https://mirioeggmann.github.io/tags/vps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>buildx</title>
+      <link>https://mirioeggmann.github.io/tags/buildx/</link>
+      <pubDate>Wed, 25 Sep 2019 19:09:56 +0200</pubDate>
+      
+      <guid>https://mirioeggmann.github.io/tags/buildx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://mirioeggmann.github.io/tags/docker/</link>
+      <pubDate>Wed, 25 Sep 2019 19:09:56 +0200</pubDate>
+      
+      <guid>https://mirioeggmann.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

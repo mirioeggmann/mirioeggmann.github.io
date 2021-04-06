@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Mirio Eggmann">
+    <meta name="description" content="Mirio Eggmann&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setup Docker Buildx on Debian"/>
+<meta name="twitter:description" content="Install docker-ce according to Get Docker Engine - Community for Debian Add your user to the docker group and remember to log out and back in for this to take effect!  sudo usermod -aG docker $USER  When you now type in docker ps without sudo it should then return  $ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES  Create a .docker folder in your $HOME  mkdir ~/."/>
+
+    <meta property="og:title" content="Setup Docker Buildx on Debian" />
+<meta property="og:description" content="Install docker-ce according to Get Docker Engine - Community for Debian Add your user to the docker group and remember to log out and back in for this to take effect!  sudo usermod -aG docker $USER  When you now type in docker ps without sudo it should then return  $ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES  Create a .docker folder in your $HOME  mkdir ~/." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mirioeggmann.github.io/posts/setup-docker-buildx-on-debian/" />
+<meta property="article:published_time" content="2019-09-25T19:09:56&#43;02:00"/>
+<meta property="article:modified_time" content="2019-09-25T19:09:56&#43;02:00"/>
+
+
+    
+      <base href="https://mirioeggmann.github.io/posts/setup-docker-buildx-on-debian/">
+    
+    <title>
+  Setup Docker Buildx on Debian · 
+</title>
+
+    
+      <link rel="canonical" href="https://mirioeggmann.github.io/posts/setup-docker-buildx-on-debian/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://mirioeggmann.github.io/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="https://mirioeggmann.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://mirioeggmann.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.55.4" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://mirioeggmann.github.io/">
+      
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Setup Docker Buildx on Debian</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2019-09-25T19:09:56&#43;02:00'>
+                September 25, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              One minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://mirioeggmann.github.io/categories/technology/">technology</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://mirioeggmann.github.io/tags/docker/">docker</a>
+      <span class="separator">•</span>
+    <a href="https://mirioeggmann.github.io/tags/buildx/">buildx</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <ul>
+<li>Install docker-ce according to <a href="https://docs.docker.com/install/linux/docker-ce/debian/">Get Docker Engine - Community for Debian</a></li>
+<li>Add your user to the <code>docker</code> group and remember to log out and back in for this to take effect!
+<code>
+sudo usermod -aG docker $USER
+</code></li>
+<li>When you now type in <code>docker ps</code> without <code>sudo</code> it should then return
+<code>
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+</code></li>
+<li>Create a <code>.docker</code> folder in your <code>$HOME</code>
+<code>
+mkdir ~/.docker
+</code></li>
+<li>Add the following to <code>~/.docker/config.json</code>
+<code>
+{
+&quot;experimental&quot;: &quot;enabled&quot;
+}
+</code></li>
+<li><code>docker buildx ls</code> should now return
+<code>
+$ docker buildx ls
+NAME/NODE DRIVER/ENDPOINT STATUS  PLATFORMS
+default * docker                  
+default default         running linux/amd64, linux/386
+</code></li>
+<li>Setup a new buildx builder
+<code>
+docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+docker buildx create --name testbuilder --driver docker-container --use
+docker buildx inspect --bootstrap
+</code></li>
+<li>The result of <code>docker buildx inspect --bootstrap</code> should be
+```
+$ docker buildx inspect &ndash;bootstrap
+[+] Building 4.3s (<sup>1</sup>&frasl;<sub>1</sub>) FINISHED<br />
+=&gt; [internal] booting buildkit                                                                                                                                                    4.3s
+=&gt; =&gt; pulling image moby/buildkit:buildx-stable-1                                                                                                                                 3.6s
+=&gt; =&gt; creating container buildx_buildkit_testbuilder0                                                                                                                             0.7s
+Name:   testbuilder
+Driver: docker-container</li>
+</ul>
+
+<p>Nodes:
+Name:      testbuilder0
+Endpoint:  unix:///var/run/docker.sock
+Status:    running
+Platforms: linux/amd64, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, linux/386, linux/arm/v7, linux/arm/v6
+```
+- You are now ready to use Docker Buildx!</p>
+
+<div> Feel free to
+    <div style="margin-left:5px;margin-right:5px; display:inline-block;" id="tippin-button" data-dest="mirioeggmann"></div> ;)
+    <script src="https://tippin.me/buttons/tip.js" type="text/javascript"></script>
+</div>
+
+      </div>
+
+      <footer>
+        
+
+
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+    
+    
+    
+      
+      [<a href="https://github.com/luizdepra/hugo-coder/tree/"></a>]
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
