@@ -1,16 +1,11 @@
 +++ 
 draft = false
-date = 2019-10-01T13:22:23+02:00
+date = 2021-03-01T13:22:23+02:00
 title = "Raspberry Pi 4 4GB Cluster Setup"
 slug = "3-raspberry-pi-4-4gb-cluster-setup" 
 tags = ["raspberry-pi","kubernetes","cluster","arm64","microk8s"]
 categories = ["technology"]
 +++
-
-# #TODOS
-- Base setup of raspis
-- Ansible Setup of microk8s etc.
-- PVC Provisioner with NAS
 
 ![raspikube](/images/posts/3/raspikube.jpg)
 
